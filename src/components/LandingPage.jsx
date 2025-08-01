@@ -106,20 +106,20 @@ export default function LandingPage() {
           <h2>Download Slides</h2>
           <div className="card-row">
             <div className="download-card">
-              <img src="/assets/poster.jpg" alt="Intro Slide" />
-              <a href="/assets/Introduction_to_Quantum_Computing updated.pptx" download>Intro to Quantum Computing</a>
+              <img src="../../public/assets/poster.jpg" alt="Intro Slide" />
+              <a href="../../public/assets/Introduction_to_Quantum_Computing updated.pptx" download>Intro to Quantum Computing</a>
             </div>
             <div className="download-card">
-              <img src="/assets/robot.jpg" alt="Quantum Algorithms" />
-              <a href="/assets/Quantum Algorithms & Cryptographic Impact updated.pptx" download>Quantum Algorithms</a>
+              <img src="../../public/assets/robot.jpg" alt="Quantum Algorithms" />
+              <a href="../../public/assets/Quantum Algorithms & Cryptographic Impact updated.pptx" download>Quantum Algorithms</a>
             </div>
             <div className="download-card">
-              <img src="/assets/demo.mp4" alt="QC Models" />
-              <a href="/assets/Quantum_Computing_Models updated.pptx" download>Quantum Computing Models</a>
+              <img src="../../public/assets/demo.mp4" alt="QC Models" />
+              <a href="../../public/assets/Quantum_Computing_Models updated.pptx" download>Quantum Computing Models</a>
             </div>
             <div className="download-card">
-              <img src="/assets/OIP.jpeg" alt="Quantum Security" />
-              <a href="/assets/Quantum_Security_Overview updated.pptx" download>Quantum Security Overview</a>
+              <img src="../../public/assets/OIP.jpeg" alt="Quantum Security" />
+              <a href="../../public/assets/Quantum_Security_Overview updated.pptx" download>Quantum Security Overview</a>
             </div>
           </div>
         </section>
