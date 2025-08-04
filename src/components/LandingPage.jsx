@@ -106,19 +106,19 @@ export default function LandingPage() {
           <h2>Download Slides</h2>
           <div className="card-row">
             <div className="download-card">
-              <img src="/assets/poster.jpg" alt="Intro Slide" />
+              <img src="/assets/intro.png" alt="Intro Slide" />
               <a href="/assets/Introduction_to_Quantum_Computing updated.pptx" download>Intro to Quantum Computing</a>
             </div>
             <div className="download-card">
-              <img src="/assets/robot.jpg" alt="Quantum Algorithms" />
+              <img src="/assets/algorithm.png" alt="Quantum Algorithms" />
               <a href="/assets/Quantum Algorithms & Cryptographic Impact updated.pptx" download>Quantum Algorithms</a>
             </div>
             <div className="download-card">
-              <img src="/assets/demo.mp4" alt="QC Models" />
+              <img src="/assets/models.png" alt="QC Models" />
               <a href="/assets/Quantum_Computing_Models updated.pptx" download>Quantum Computing Models</a>
             </div>
             <div className="download-card">
-              <img src="/assets/OIP.jpeg" alt="Quantum Security" />
+              <img src="/assets/pqc.png" alt="Quantum Security" />
               <a href="/assets/Quantum_Security_Overview updated.pptx" download>Quantum Security Overview</a>
             </div>
           </div>
