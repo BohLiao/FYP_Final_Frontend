@@ -128,19 +128,19 @@ export default function LandingPage() {
           <h2>Kahoot Quizzes</h2>
           <div className="card-row">
             <div className="download-card">
-              <img src="/assets/robot.jpg" alt="QC Intro" />
+              <img src="/assets/intro.png" alt="QC Intro" />
               <a href="https://create.kahoot.it/share/updated-qc-intro/214d716c-a95a-4ee7-97a1-2b43241c0b67" target="_blank" rel="noreferrer">QC Introduction</a>
             </div>
             <div className="download-card">
-              <img src="/assets/OIP.jpeg" alt="QC Models" />
+              <img src="/assets/algorithm.png" alt="QC Models" />
               <a href="https://create.kahoot.it/share/updated-qc-model/45a1af6d-afaf-4956-a4a7-f09bb3c36169" target="_blank" rel="noreferrer">QC Models</a>
             </div>
             <div className="download-card">
-              <img src="/assets/poster.jpg" alt="QC Algorithms" />
+              <img src="/assets/models.png" alt="QC Algorithms" />
               <a href="https://create.kahoot.it/share/updated-qc-algorithms/1f59e879-bc0a-4c23-9e21-15ee66fe5a52" target="_blank" rel="noreferrer">QC Algorithms</a>
             </div>
             <div className="download-card">
-              <img src="/assets/demo.mp4" alt="PQC" />
+              <img src="/assets/pqc.png" alt="PQC" />
               <a href="https://create.kahoot.it/share/updated-qc-pqc/153b809c-e60a-40b2-b84c-af133f422738" target="_blank" rel="noreferrer">Post-Quantum Crypto</a>
             </div>
           </div>
