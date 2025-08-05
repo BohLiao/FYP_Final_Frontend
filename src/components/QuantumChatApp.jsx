@@ -56,20 +56,9 @@ const QuantumChatApp = ({ auth }) => {
           .then((r) => setMsgs(r.data))
           .catch(console.error);
       } else {
-        Promise.all([
-          axios.get(`${import.meta.env.VITE_API_URL}/messages`, { params: { from: me, to } }),
-          axios.get(`${import.meta.env.VITE_API_URL}/messages`, { params: { from: to, to: me } }),
-        ])
-          .then(([sent, received]) => {
-            const msgMap = new Map();
-            [...sent.data, ...received.data].forEach((m) => {
-              msgMap.set(m.id, m); // Use message ID as the key
-            });
-            const allMsgs = Array.from(msgMap.values()).sort(
-              (a, b) => new Date(a.timestamp || a.created_at) - new Date(b.timestamp || b.created_at)
-            );
-            setMsgs(allMsgs);
-          })
+        axios
+          .get(`${import.meta.env.VITE_API_URL}/messages`, { params: { from: me, to } })
+          .then((r) => setMsgs(r.data))
           .catch(console.error);
       }
     };
