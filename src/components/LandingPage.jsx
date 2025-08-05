@@ -114,7 +114,7 @@ export default function LandingPage() {
               <a href="/assets/Quantum Algorithms & Cryptographic Impact updated.pptx" download>Quantum Algorithms</a>
             </div>
             <div className="download-card">
-              <img src="/assets/models.png" alt="QC Models" />
+              <img src="/assets/models.jpg" alt="QC Models" />
               <a href="/assets/Quantum_Computing_Models updated.pptx" download>Quantum Computing Models</a>
             </div>
             <div className="download-card">
@@ -133,11 +133,11 @@ export default function LandingPage() {
             </div>
             <div className="download-card">
               <img src="/assets/algorithm.png" alt="QC Models" />
-              <a href="https://create.kahoot.it/share/updated-qc-model/45a1af6d-afaf-4956-a4a7-f09bb3c36169" target="_blank" rel="noreferrer">QC Models</a>
+              <a href="https://create.kahoot.it/share/updated-qc-model/45a1af6d-afaf-4956-a4a7-f09bb3c36169" target="_blank" rel="noreferrer">QC Algorithms</a>
             </div>
             <div className="download-card">
-              <img src="/assets/models.png" alt="QC Algorithms" />
-              <a href="https://create.kahoot.it/share/updated-qc-algorithms/1f59e879-bc0a-4c23-9e21-15ee66fe5a52" target="_blank" rel="noreferrer">QC Algorithms</a>
+              <img src="/assets/models.jpg" alt="QC Algorithms" />
+              <a href="https://create.kahoot.it/share/updated-qc-algorithms/1f59e879-bc0a-4c23-9e21-15ee66fe5a52" target="_blank" rel="noreferrer">QC Models</a>
             </div>
             <div className="download-card">
               <img src="/assets/pqc.png" alt="PQC" />
