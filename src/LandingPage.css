@@ -1,0 +1,381 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body, #root {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html, body {
+  overflow: hidden;
+}
+
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+/* Navigation */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 255, 231, 0.08);
+  border-bottom: 1px solid #00ffe7;
+}
+
+.sticky-nav a {
+  color: #00ffe7;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+  text-transform: capitalize;
+}
+
+.sticky-nav a:hover {
+  color: #00cccc;
+  border-bottom: 2px solid #00ffe7;
+}
+
+/* Hero Header */
+.hero-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #111;
+  border-bottom: 1px solid #00ffe7;
+}
+
+.brand-title {
+  font-size: 3rem;
+  color: #00ffe7;
+  text-shadow: 0 0 4px #00ffe7;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #ccc;
+}
+
+.cta-buttons button {
+  margin: 1rem 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #00ffe7;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons button:hover {
+  background: #00cccc;
+  transform: translateY(-2px);
+}
+
+/* Section Styles */
+section {
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #222;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #00ffe7;
+  margin-bottom: 1.5rem;
+}
+
+ul.roadmap li,
+ul.key-benefits li {
+  font-size: 1rem;
+  margin: 0.75rem auto;
+  list-style: none;
+  max-width: 600px;
+  position: relative;
+  padding-left: 1.5rem;
+  text-align: justify;
+}
+
+ul li::before {
+  content: '➤';
+  position: absolute;
+  left: 0;
+  color: #00ffe7;
+}
+
+/* Poster and Video Neon Effect */
+.neon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.neon-glow {
+  border-radius: 12px;
+  box-shadow: 0 0 6px #00ffe7, 0 0 12px #00ffe7;
+  max-width: 100%;
+  width: 80%;
+  transition: transform 0.4s ease;
+}
+
+.neon-glow:hover {
+  transform: scale(1.015);
+}
+
+/* Smaller poster image */
+.poster-smaller img {
+  max-width: 50% !important;
+  height: auto !important;
+}
+
+/* Real-Time Hacks */
+.hacks-today {
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.hack-count {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ff4d4d;
+}
+
+/* Test Section Buttons */
+.test-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.test-description {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Remove emojis from buttons */
+.primary-button.no-emoji {
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button.no-emoji:hover {
+  background: #00a8cc;
+}
+
+/* FAQ */
+.faq {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+}
+
+.faq h4 {
+  color: #00ffe7;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  text-align: center;
+}
+
+.faq p {
+  font-size: 0.8rem;
+  color: #ccc;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 0.25rem;
+}
+
+/* Team Section */
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background: #181818;
+  padding: 1rem;
+  border: 1px solid #00ffe7;
+  border-radius: 10px;
+  max-width: 180px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px #00ffe7;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #00ffe7;
+  margin-bottom: 0.75rem;
+}
+
+.card h3 {
+  color: #00ffe7;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  background: #0d0d0d;
+}
+
+/* Animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Cards Row */
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/* Download Cards */
+.download-card {
+  background: #181818;
+  border: 1px solid #00ffe7;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 22%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  color: #00ffe7;
+  user-select: none;
+}
+
+.download-card:hover {
+  box-shadow: 0 0 12px #00ffe7;
+  transform: translateY(-5px);
+}
+
+.download-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.download-card a {
+  color: #00ffe7;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: text;
+}
+
+.download-card a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .card-row {
+    flex-wrap: wrap;
+  }
+
+  .download-card {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sticky-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .cta-buttons button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .team-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-row {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .download-card {
+    width: 100%;
+  }
+}

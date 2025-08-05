@@ -1,0 +1,209 @@
+/* reset & base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  overflow-x: hidden;
+}
+
+/* shared containers */
+.login-container,
+.otp-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #111, #000);
+}
+
+/* base card style */
+.login-card,
+.register-card,
+.otp-card {
+  background: #121212;
+  padding: 2.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #00ffe7;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #00ffe56d;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-card:hover,
+.register-card:hover,
+.otp-card:hover {
+  box-shadow: 0 0 30px #00ffe7;
+}
+
+/* register card */
+.register-container {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #111, #000);
+}
+
+.register-card {
+  max-width: 520px;
+}
+
+/* headings */
+.login-card h2,
+.register-card h2,
+.otp-card h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #00ffe7;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px #00ffe7, 0 0 10px #00ffe7;
+}
+
+/* form */
+.login-card form,
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* labels */
+.login-card label,
+.register-card label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  color: #00ffe7;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* inputs */
+.login-card input,
+.register-card input,
+.otp-card input {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #444;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  background-color: #1e1e1e;
+  color: #00ffe7;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  width: 100%;
+}
+
+.login-card input::placeholder,
+.register-card input::placeholder,
+.otp-card input::placeholder {
+  font-style: italic;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* buttons */
+.login-card button,
+.register-card button,
+.otp-card button,
+.back-button {
+  padding: 0.65rem 0;
+  background-color: #00ffe7;
+  border: none;
+  border-radius: 0.75rem;
+  color: #000;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  letter-spacing: 0.04em;
+  box-shadow: 0 0.15rem 0.3rem rgba(0, 255, 231, 0.6);
+  margin-top: 0.5rem;
+}
+
+.login-card button:hover,
+.register-card button:hover,
+.otp-card button:hover,
+.back-button:hover {
+  background-color: #00cccc;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 204, 204, 0.8);
+}
+
+/* error message */
+.error-message {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+/* info message */
+.info-message {
+  background-color: #009973;
+  color: #e0fff9;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+/* OTP instructions */
+.otp-card p {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* footer link */
+.login-link {
+  margin-top: 1.2rem;
+  font-size: 0.75rem;
+  color: #aaa;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.login-link a {
+  color: #00ffe7;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #00cccc;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .login-card,
+  .register-card,
+  .otp-card {
+    padding: 2rem 1.5rem;
+    max-width: 90vw;
+  }
+}
